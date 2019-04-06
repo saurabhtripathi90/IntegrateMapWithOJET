@@ -1,0 +1,54 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding"> 
+
+  <div id="select">
+    <oj-label>Start Location</oj-label>
+    <oj-select-one id="basicSelect" value="{{start}}" on-value-changed='[[onChangeHandler]]' style="max-width:20em">
+        <oj-option value="chicago, il">Chicago</oj-option>
+        <oj-option value="st louis, mo">St Louis</oj-option>
+        <oj-option value="joplin, mo">Joplin, MO</oj-option>
+        <oj-option value="oklahoma city, ok">Oklahoma City</oj-option>
+        <oj-option value="amarillo, tx">Amarillo</oj-option>
+        <oj-option value="gallup, nm">Gallup, NM</oj-option>
+        <oj-option value="flagstaff, az">Flagstaff, AZ</oj-option>
+        <oj-option value="winona, az">Winona</oj-option>
+        <oj-option value="kingman, az">Kingman</oj-option>
+        <oj-option value="barstow, ca">Barstow</oj-option>
+        <oj-option value="san bernardino, ca">San Bernardino</oj-option>
+        <oj-option value="los angeles, ca">Los Angeles</oj-option>
+    </oj-select-one>
+    
+    <br> <br>
+
+    <oj-label>End Location</oj-label>
+    <oj-select-one id="basicSelect" value="{{end}}" on-value-changed='[[onChangeHandler]]' style="max-width:20em">
+        <oj-option value="chicago, il">Chicago</oj-option>
+        <oj-option value="st louis, mo">St Louis</oj-option>
+        <oj-option value="joplin, mo">Joplin, MO</oj-option>
+        <oj-option value="oklahoma city, ok">Oklahoma City</oj-option>
+        <oj-option value="amarillo, tx">Amarillo</oj-option>
+        <oj-option value="gallup, nm">Gallup, NM</oj-option>
+        <oj-option value="flagstaff, az">Flagstaff, AZ</oj-option>
+        <oj-option value="winona, az">Winona</oj-option>
+        <oj-option value="kingman, az">Kingman</oj-option>
+        <oj-option value="barstow, ca">Barstow</oj-option>
+        <oj-option value="san bernardino, ca">San Bernardino</oj-option>
+        <oj-option value="los angeles, ca">Los Angeles</oj-option>
+    </oj-select-one>
+    
+    
+    <br> <br>
+
+    <oj-label for="text-input">Distance:</oj-label>
+    <!-- <oj-input-text id="text-input" value="{{distance}}"></oj-input-text> -->
+    <span data-bind="text:distance"></span>
+    <oj-label for="text-input">KM</oj-label>
+
+    </div>
+
+    <div id="map" style="width:1000px;height:680px;"></div>
+
+</div>
